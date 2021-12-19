@@ -1,0 +1,32 @@
+{
+    "name": "@yukino-app/site",
+    "version": "0.0.0",
+    "author": "Zyrouge",
+    "private": true,
+    "license": "GPL-3.0",
+    "scripts": {
+        "setup": "node ./scripts/generate-icons",
+        "dev": "vite",
+        "build": "rimraf ./dist && vue-tsc --noEmit && vite build",
+        "serve": "vite preview",
+        "typecheck": "vue-tsc --noEmit"
+    },
+    "dependencies": {
+        "marked": "^3.0.7",
+        "sanitize-html": "^2.5.2",
+        "vue": "^3.2.16",
+        "vue-router": "4"
+    },
+    "devDependencies": {
+        "@types/marked": "^3.0.2",
+        "@types/sanitize-html": "^2.5.0",
+        "@vitejs/plugin-vue": "^1.9.2",
+        "autoprefixer": "^10.3.7",
+        "got": "^11.8.3",
+        "postcss": "^8.3.9",
+        "tailwindcss": "^2.2.16",
+        "typescript": "^4.4.3",
+        "vite": "^2.6.0",
+        "vue-tsc": "^0.3.0"
+    }
+}

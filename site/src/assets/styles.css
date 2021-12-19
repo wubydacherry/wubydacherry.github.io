@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --indigo-500: #6366f1;
+    --gray-200: #e4e4e7;
+    --gray-800: #27272a;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+
+    @apply text-gray-900 dark:bg-gray-900 dark:text-white;
+}
+
+hr {
+    @apply border-gray-200 dark:border-gray-800;
+}
+
+code {
+    font-family: "Fira Code", monospace;
+
+    @apply bg-gray-100 dark:bg-gray-800 rounded mx-0.5 px-1;
+}
+
+a {
+    @apply text-indigo-600 dark:text-indigo-400 hover:text-indigo-500 dark:hover:text-indigo-500 transition duration-200;
+}
+
+.wx {
+    @apply mx-8 md:mx-32;
+}
+
+.wy {
+    @apply my-12;
+}

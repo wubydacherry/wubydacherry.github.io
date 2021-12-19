@@ -1,0 +1,29 @@
+{
+    "name": "@yukino-app/site-cli",
+    "version": "0.0.0",
+    "private": true,
+    "author": "Zyrouge",
+    "license": "MIT",
+    "scripts": {
+        "site:setup": "ts-node ./cli/site-setup.ts",
+        "site:dev": "ts-node ./cli/site-dev.ts",
+        "site:build": "ts-node ./cli/site-build.ts",
+        "wiki:dev": "ts-node ./cli/wiki-dev.ts",
+        "wiki:build": "ts-node ./cli/wiki-build.ts",
+        "build": "rimraf ./dist && yarn site:build && yarn wiki:build",
+        "serve": "serve ./dist"
+    },
+    "devDependencies": {
+        "@types/copy": "^0.3.2",
+        "@types/cross-spawn": "^6.0.2",
+        "@types/fs-extra": "^9.0.13",
+        "@types/node": "^16.10.3",
+        "cross-spawn": "^7.0.3",
+        "fs-extra": "^10.0.0",
+        "readdirp": "^3.6.0",
+        "rimraf": "^3.0.2",
+        "serve": "^12.0.1",
+        "ts-node": "^10.2.1",
+        "typescript": "^4.4.3"
+    }
+}
